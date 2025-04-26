@@ -86,38 +86,38 @@ const EventsComponent = () => {
         <div className="w-full overflow-hidden bg-white">
             {/* Header Section */}
             <div
-                className="text-white pl-3 md:p-5 py-6"
-                style={{
-                    background: 'linear-gradient(to right, #012191, #0c0c2a)',
-                }}
-            >
-                <div className="w-full mx-auto relative px-4 md:px-6 lg:px-8">
-                    {/* Star Badge */}
-                    <div className="absolute -top-4 -left-2 md:-top-6 md:-left-4 lg:-left-6">
-                        <StarBadge />
-                    </div>
+  className="text-white pl-3 md:p-5 py-6"
+  style={{
+    background: 'linear-gradient(to right, #012191, #0c0c2a)',
+  }}
+>
+  <div className="w-full mx-auto relative px-4 md:px-6 lg:px-8">
+    {/* Star Badge */}
+    <div className="absolute -top-4 -left-2 md:-top-6 md:-left-4 lg:-left-6">
+      <StarBadge />
+    </div>
 
-                    {/* Header Content - Centered */}
-                    <div className="flex flex-col items-center text-center">
-                        <h1 className="font-georgia font-bold text-5xl leading-none tracking-wide mb-4" style={{ width: "190px", height: "57px", letterSpacing: "2%" }}>
-                            Bharat
-                        </h1>
-                        <p className="font-poppins font-normal text-base leading-none tracking-wide mt-2" style={{ width: "972px", height: "53px", maxWidth: "100%", letterSpacing: "2%" }}>
-                            BHARAT 1.0 (Business Heroes Aspiring to Rise and
-                            Achieve Together), held on November 8th and 9th,
-                            2024, at MIT ADT University, brought together 49
-                            startups from diverse sectors such as Agriculture,
-                            Blockchain, MedTech, and Robotics.
-                        </p>
-                        <a
-                            href="#"
-                            className="text-yellow-400 text-xs md:text-sm hover:underline mt-2 inline-block"
-                        >
-                            Link here
-                        </a>
-                    </div>
-                </div>
-            </div>
+    {/* Header Content - Centered */}
+    <div className="flex flex-col items-center text-center">
+      <h1 className="font-georgia font-bold text-3xl md:text-4xl lg:text-5xl leading-tight md:leading-none tracking-wide mb-2 md:mb-4">
+        Bharat
+      </h1>
+      <p className="font-poppins font-normal text-sm md:text-base leading-relaxed md:leading-normal tracking-wide mt-1 md:mt-2 px-2 md:px-4">
+        BHARAT 1.0 (Business Heroes Aspiring to Rise and
+        Achieve Together), held on November 8th and 9th,
+        2024, at MIT ADT University, brought together 49
+        startups from diverse sectors such as Agriculture,
+        Blockchain, MedTech, and Robotics.
+      </p>
+      <a
+        href="#"
+        className="text-yellow-400 text-xs md:text-sm hover:underline mt-2 md:mt-3 inline-block"
+      >
+        Link here
+      </a>
+    </div>
+  </div>
+</div>
 
             {/* Events Section */}
             <div className="mx-auto py-6 md:py-8 lg:py-12 px-4 md:px-6 lg:px-8">

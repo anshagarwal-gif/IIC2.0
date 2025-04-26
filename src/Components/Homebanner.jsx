@@ -46,112 +46,105 @@ const Homebanner = () => {
 
   return (
     <>
-      {/* Hero Section with Fixed Background */}
-      <div className="relative h-screen">
-        {/* Background Image + Gradient */}
-        <div 
-          className="absolute inset-0 bg-cover bg-fixed bg-center -z-10"
-          style={{ backgroundImage: `url(${bannerImage})` }}
-        >
-          <div 
-            className="absolute inset-0"
-            style={{
-              background: 'linear-gradient(90deg, rgba(12, 13, 66, 0.8) 0%, rgba(32, 34, 105, 0.6) 52.5%, rgba(204, 204, 229, 0.1) 99.06%)'
-            }}
-          />
-        </div>
-
-        {/* Hero Content */}
-        <div className="h-full flex items-center">
-          <div className="container mx-auto px-6">
-            <h1 className="text-6xl font-bold text-white mb-4" style={{
-    fontFamily: "Georgia, serif",
-    fontWeight: 400,
-    fontSize: "42px",
-    lineHeight: "47.72px",
-    letterSpacing: "2%",
-    textAlign: "left",  
-    width: "425px",
-    height: "115px",
-    color: "white", // Adjust color if needed
-  }}>
-              Welcome to the<br />
-              MIT ADT University's
-            </h1>
-            <h2
-  style={{
-    fontFamily: "Georgia, serif",
-    fontWeight: 400,
-    fontSize: "80px",
-    lineHeight: "91.23px",
-    letterSpacing: "2%",
-    textAlign: "left",
-    background: "linear-gradient(180deg, #FFC700 0%, #BA9100 100%)",
-    WebkitBackgroundClip: "text",
-    WebkitTextFillColor: "transparent",
-  }}
->
-  Institution’s<br />Innovation<br />Council!
-</h2>
-
-          </div>
-        </div>
-      </div>
-
-      {/* Stats Section with Updated Styling */}
+  {/* Hero Section with Fixed Background */}
+  <div className="relative h-screen">
+    {/* Background Image + Gradient */}
+    <div 
+      className="absolute inset-0 bg-cover bg-fixed bg-center -z-10"
+      style={{ backgroundImage: `url(${bannerImage})` }}
+    >
       <div 
-        ref={statsRef} 
-        className="py-20 relative"
+        className="absolute inset-0"
         style={{
-          background: 'linear-gradient(to bottom, rgba(12, 13, 66, 0.8) 100%, rgba(12, 13, 66, 0.8) 50%, rgba(12, 13, 66, 0.8) 0%)'
+          background: 'linear-gradient(90deg, rgba(12, 13, 66, 0.8) 0%, rgba(32, 34, 105, 0.6) 52.5%, rgba(204, 204, 229, 0.1) 99.06%)'
         }}
-      >
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {[
-              { value: count1.toFixed(1)+ "⭐", label: "Ranking" },
-              { value: Math.round(count2) + "+", label: "Internships provided" },
-              { value: Math.round(count3) + "L", label: "Investments" },
-              { value: Math.round(count4) + "+", label: "Startups Impacted" }
-            ].map((stat, index) => (
-              <div key={index} className="p-6">
-                {/* Gradient Text Effect */}
-                <div
-                  className="text-4xl font-bold mb-2"
-                  style={{
-                    fontFamily: "'Merriweather Sans', sans-serif",
-                    fontWeight: 700,
-                    fontSize: '64px',
-                    lineHeight: '80.45px',
-                    letterSpacing: '2%',
-                    textAlign: 'center',
-                    background: 'linear-gradient(180deg, #FFE594 0%, #BA9100 100%)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent'
-                  }}
-                >
-                  {stat.value}
-                </div>
-                 {/* Headings Below Numbers */}
-      <div
-        style={{
-          fontFamily: "'Merriweather Sans', sans-serif",
-          fontWeight: 700,
-          fontSize: '22px',
-          lineHeight: '27.65px',
-          letterSpacing: '2%',
-          textAlign: 'center',
-          color: 'white'
-        }}
-      >
-        {stat.label}
+      />
+    </div>
+
+    {/* Hero Content */}
+    <div className="h-full flex items-center">
+      <div className="container mx-auto px-4 md:px-6">
+        <h1 className="font-serif font-normal text-white mb-2 md:mb-4"
+          style={{
+            fontSize: "clamp(24px, 5vw, 42px)",
+            lineHeight: "1.15",
+            letterSpacing: "2%",
+            maxWidth: "100%",
+            width: "auto",
+            height: "auto",
+          }}>
+          Welcome to the<br />
+          MIT ADT University's
+        </h1>
+        <h2
+          className="font-serif font-normal bg-clip-text text-transparent"
+          style={{
+            fontSize: "clamp(40px, 8vw, 80px)",
+            lineHeight: "1.15",
+            letterSpacing: "2%",
+            background: "linear-gradient(180deg, #FFC700 0%, #BA9100 100%)",
+            WebkitBackgroundClip: "text",
+          }}
+        >
+          Institution's<br className="md:block" />Innovation<br className="md:block" />Council!
+        </h2>
       </div>
-              </div>
-            ))}
+    </div>
+  </div>
+
+  {/* Stats Section with Updated Styling */}
+  <div 
+    ref={statsRef} 
+    className="py-12 md:py-20 relative"
+    style={{
+      background: 'linear-gradient(to bottom, rgba(12, 13, 66, 0.8) 100%, rgba(12, 13, 66, 0.8) 50%, rgba(12, 13, 66, 0.8) 0%)'
+    }}
+  >
+    <div className="container mx-auto px-4 md:px-6">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center">
+        {[
+          { value: count1.toFixed(1)+ "⭐", label: "Ranking" },
+          { value: Math.round(count2) + "+", label: "Internships provided" },
+          { value: Math.round(count3) + "L", label: "Investments" },
+          { value: Math.round(count4) + "+", label: "Startups Impacted" }
+        ].map((stat, index) => (
+          <div key={index} className="p-2 md:p-6">
+            {/* Gradient Text Effect */}
+            <div
+              className="font-bold mb-1 md:mb-2 bg-clip-text text-transparent"
+              style={{
+                fontFamily: "'Merriweather Sans', sans-serif",
+                fontWeight: 700,
+                fontSize: 'clamp(32px, 6vw, 64px)',
+                lineHeight: '1.25',
+                letterSpacing: '2%',
+                textAlign: 'center',
+                background: 'linear-gradient(180deg, #FFE594 0%, #BA9100 100%)',
+                WebkitBackgroundClip: 'text',
+              }}
+            >
+              {stat.value}
+            </div>
+            {/* Headings Below Numbers */}
+            <div
+              style={{
+                fontFamily: "'Merriweather Sans', sans-serif",
+                fontWeight: 700,
+                fontSize: 'clamp(14px, 3vw, 22px)',
+                lineHeight: '1.25',
+                letterSpacing: '2%',
+                textAlign: 'center',
+                color: 'white'
+              }}
+            >
+              {stat.label}
+            </div>
           </div>
-        </div>
+        ))}
       </div>
-    </>
+    </div>
+  </div>
+</>
   );
 };
 

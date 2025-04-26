@@ -44,7 +44,7 @@ const About = () => {
 
       <Heading headingText={"ABOUT IIC"} />
       <div className="flex flex-col md:flex-row items-center gap-10 justify-center mb-32" ref={aboutSectionRef}>
-        <div className="w-full md:w-2/4 flex justify-center items-start gap-24">
+        <div className="w-full md:w-2/4 flex justify-center items-start md:gap-24">
           <div className="relative">
             <div
               ref={ball1}
@@ -79,7 +79,7 @@ const About = () => {
         </div>
 
 
-        <div className="w-full md:w-2/4 space-y-6 pr-24">
+        <div className="w-full md:w-2/4 space-y-6 md:px-24 px-10">
           <p className="text-gray-800 leading-relaxed font-poppins text-[18px] font-normal">
             In the year 2018, the Ministry of Education (MoE) through MoE's
             Innovation Cell (MIC) launched the Institution's Innovation
@@ -101,39 +101,41 @@ const About = () => {
       </div>
 
 
-      <div className="bg-[#0C0D42] text-[#FFFFFF] py-32 px-4 md:px-8">
-        <div className="container mx-auto max-w-6xl">
-          <div className="flex justify-center gap-16 md:gap-24 items-center">
-            <div className="space-y-12 mx-auto">
-              <div className="flex items-center gap-8">
-                <img src={Target} alt="" width={"50px"} height={"50px"} />
-                <h2 className="text-5xl font-normal" style={{
-                  fontFamily: "Georgia Regular"
-                }}>Mission</h2>
-              </div>
-              <p className="text-2xl leading-relaxed text-gray-200">
-                The IIC's core mission is to inspire and equip students with
-                entrepreneurial skills and mindset, fostering innovation and
-                business acumen.
-              </p>
-            </div>
-
-            <div className="space-y-12">
-              <div className="flex items-center gap-8">
-                <img src={TeleScope} alt="" width={"48px"} height={"48px"} />
-                <h2 className="text-5xl font-normal" style={{
-                  fontFamily: "Georgia Regular"
-                }}>Vision</h2>
-              </div>
-              <p className="text-2xl leading-relaxed text-gray-200">
-                The Institution's Innovation Council (IIC) at our college is
-                aligned with a government initiative to cultivate
-                entrepreneurship among students
-              </p>
-            </div>
-          </div>
+      <div className="bg-[#0C0D42] text-[#FFFFFF] py-16 md:py-24 lg:py-32 px-4 md:px-8">
+  <div className="container mx-auto max-w-6xl">
+    <div className="flex flex-col md:flex-row justify-center gap-12 md:gap-16 lg:gap-24 items-center">
+      {/* Mission Section */}
+      <div className="space-y-6 md:space-y-8 lg:space-y-12 w-full md:w-1/2">
+        <div className="flex items-center gap-4 md:gap-6 lg:gap-8">
+          <img src={Target} alt="Mission icon" width={"40px"} height={"40px"} className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-[50px] lg:h-[50px]" />
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal" style={{
+            fontFamily: "Georgia Regular"
+          }}>Mission</h2>
         </div>
+        <p className="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-200">
+          The IIC's core mission is to inspire and equip students with
+          entrepreneurial skills and mindset, fostering innovation and
+          business acumen.
+        </p>
       </div>
+
+      {/* Vision Section */}
+      <div className="space-y-6 md:space-y-8 lg:space-y-12 w-full md:w-1/2 mt-12 md:mt-0">
+        <div className="flex items-center gap-4 md:gap-6 lg:gap-8">
+          <img src={TeleScope} alt="Vision icon" width={"40px"} height={"40px"} className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-[48px] lg:h-[48px]" />
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal" style={{
+            fontFamily: "Georgia Regular"
+          }}>Vision</h2>
+        </div>
+        <p className="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-200">
+          The Institution's Innovation Council (IIC) at our college is
+          aligned with a government initiative to cultivate
+          entrepreneurship among students
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
 
       <Heading headingText={"Major focus area"} />

@@ -16,7 +16,7 @@ const Home = () => {
     <div>
     <Homebanner/>
        {/* About Section */}
-       <section className="mb-16 px-12 p-12 ml-12"  >
+       <section className="mb-16 md:px-12 px-6 p-12 md:ml-12"  >
         <h1 className="text-4xl font-bold mb-8" style={{fontFamily:"Georgia" ,fontWeight:"400",fontSize:"42px"}}>About</h1>
         <div className="flex flex-col lg:flex-row items-center gap-40">
           <div className="lg:w-1/2">
