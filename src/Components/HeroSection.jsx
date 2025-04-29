@@ -13,7 +13,7 @@ function HeroSection() {
                 backgroundColor: '#0C0D42'
             }}
         >
-            <div className="text-animate h-[30%] text-center">
+            <div className="text-animate h-[10%] md:h-[30%] text-center">
                 <h1
                     className="text-animation text-[9vw] md:text-[7vw] lg:text-[4.6vw] inspiration"
                     style={{
