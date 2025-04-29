@@ -55,16 +55,16 @@ code {
       transform: translateY(0); /* Show "Inspiration" */
     }
     33%, 61% {
-      transform: translateY(-20vw); /* Show "Ideation" */
+      transform: translateY(-15vw); /* Show "Ideation" */
     }
     66%, 94% {
-      transform: translateY(-34vw); /* Show "Innovation" */
+      transform: translateY(-28vw); /* Show "Innovation" */
     }
     99% {
-      transform: translateY(-52vw); /* Show duplicate "Inspiration" */
+      transform: translateY(-45vw); /* Show duplicate "Inspiration" */
     }
     99.99% {
-      transform: translateY(-52vw); /* Hold duplicate "Inspiration" */
+      transform: translateY(-45vw); /* Hold duplicate "Inspiration" */
     }
     100% {
       transform: translateY(0); /* Reset to original "Inspiration" */
