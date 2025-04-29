@@ -32,11 +32,43 @@ code {
   .text-animation {
     animation: move-down 9s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
   }
+
+  @media screen and (min-width: 768px) {
+    .text-animation {
+      animation: move-down 9s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .text-animation {
+      animation: move-down-responsive 9s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+    }
+  }
   
   .text-animate {
     position: relative;
     overflow: hidden;
     height: 7vw;
+  }
+
+  @keyframes move-down-responsive{
+    0%, 28% {
+      transform: translateY(0); /* Show "Inspiration" */
+    }
+    33%, 61% {
+      transform: translateY(-20vw); /* Show "Ideation" */
+    }
+    66%, 94% {
+      transform: translateY(-34vw); /* Show "Innovation" */
+    }
+    99% {
+      transform: translateY(-52vw); /* Show duplicate "Inspiration" */
+    }
+    99.99% {
+      transform: translateY(-52vw); /* Hold duplicate "Inspiration" */
+    }
+    100% {
+      transform: translateY(0); /* Reset to original "Inspiration" */
+    }
   }
   
   @keyframes move-down {
